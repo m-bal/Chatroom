@@ -1,2 +1,2 @@
 # Chatroom
-Chatroom Built using JavaFx
+Chatroom built using JavaFx
