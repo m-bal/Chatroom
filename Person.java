@@ -7,10 +7,6 @@ package chat.app;
 
 import java.io.Serializable;
 
-/**
- *
- * @author manvir
- */
 public class Person implements Serializable{
     private String name;
     private int ID;
