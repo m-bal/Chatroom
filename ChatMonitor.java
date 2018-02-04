@@ -10,20 +10,19 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Vector;
 
-/**
- *
- * @author Anthony
- */
+
 public class ChatMonitor {
 
     Vector<ObjectOutputStream> users = new Vector<ObjectOutputStream>();
     Vector<Person> userNames = new Vector<Person>();
+    // update names 
     synchronized public void addUsers(Person p, ObjectOutputStream s) {
         userNames.add(p);
         users.add(s);
         broadcast(new Vector<Person>(userNames), new ArrayList());
         broadcast(p.getName() + " connected!\n", new ArrayList());
     }
+    // remove names that left the chat
     synchronized public void remove(Person p, ObjectOutputStream s){
         userNames.remove(p);
         users.remove(s);
@@ -31,7 +30,7 @@ public class ChatMonitor {
         
         broadcast(p.getName() + " Disconnected!\n", new ArrayList());
     }
-
+ 
     synchronized public void broadcast(Object msg, ArrayList<Integer> list) {
         try {
             System.out.println(list.size()+" this is list");
