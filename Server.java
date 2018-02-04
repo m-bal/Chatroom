@@ -11,10 +11,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
-/**
- *
- * @author Anthony
- */
+
 public class Server {
 
     private int port = 43331;
@@ -71,9 +68,7 @@ public class Server {
                 newThread.setDaemon(true);
                 newThread.start();
             }
-        } catch (Exception e) {
-          //  cm.remove(clientName, out);
-            
+        } catch (Exception e) {            
             e.printStackTrace();
         }
     }
@@ -81,7 +76,6 @@ public class Server {
     public static void main(String[] args) {
         Server s = new Server();
         s.handleClient();
-        
     }
 
 }
