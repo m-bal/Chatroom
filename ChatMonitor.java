@@ -40,7 +40,7 @@ public class ChatMonitor {
                 users.get(i).writeObject(msg);
             }
             }else{
-                //if the clicks on any name then display message only to those users. 
+                //if the user clicks on any name then display message only to those users. 
                 for(int i = 0; i < list.size(); ++i){
                     users.get((int) list.get(i)).writeObject(msg);
                 }
