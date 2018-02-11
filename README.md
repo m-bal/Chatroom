@@ -1,3 +1,2 @@
 # Chatroom
-Chatroom built using JavaFx
-I still need to make changes
+A chatroom where the user can send messages to the entire chat or a private message to one or more users.
