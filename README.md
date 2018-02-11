@@ -1,3 +1,3 @@
 # Chatroom
 * A chatroom where the user can send messages to the entire chat or a private message to one or more users.
-* Utilizes multithreading to and sockets.
+* Utilizes multithreading and sockets.
