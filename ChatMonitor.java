@@ -34,11 +34,13 @@ public class ChatMonitor {
     synchronized public void broadcast(Object msg, ArrayList<Integer> list) {
         try {
             System.out.println(list.size()+" this is list");
+            // if the user doesn't click on any names then display message to all the users
             if(list.size() == 0){
             for (int i = 0; i < users.size(); ++i) {
                 users.get(i).writeObject(msg);
             }
             }else{
+                //if the clicks on any name then display message only to those users. 
                 for(int i = 0; i < list.size(); ++i){
                     users.get((int) list.get(i)).writeObject(msg);
                 }
