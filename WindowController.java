@@ -29,7 +29,7 @@ import javafx.scene.layout.HBox;
 /**
  * FXML Controller class
  *
- * @author Anthony
+ * @author manvir
  */
 public class WindowController implements Initializable {
 
